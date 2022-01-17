@@ -31,9 +31,13 @@ function Listing() {
         );
     }, [pageNumber]);
 
+const handlePageChange = (newPgeNumber : number) => {
+    setPageNumber(newPgeNumber);
+}
+
     return (
         <>
-        <Pagination />
+        <Pagination page={page} onChange={handlePageChange}/>
         <div className="container">
             <div className="row">
                 {page.content.map(movie => (
