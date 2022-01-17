@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import axios from "axios";
 import MovieCard from "components/moviecard";
 import Pagination from "components/pagination";
